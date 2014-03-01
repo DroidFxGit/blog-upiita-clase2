@@ -1,8 +1,16 @@
 #bienvenida{	
 	background: url("../imagenes/fondo_presentacion.jpg");
-	height: 1000px;
 	background-repeat: no-repeat;
 	line-height: 500px;
+	/*para que la imagen se extienda en toda la caja*/
+	background-size: cover;
+	
+	/* para que quede fija*/
+	background-attachment: fixed;
+	
+	/*sombra*/
+	text-shadow: 0px 0px px green;
+	
 }
 
 .frase{
@@ -22,3 +30,80 @@
 #suscribirse label {
 	width: 40%;
 }
+
+
+/*transiciones de las imagenes*/
+
+.frase img:hover {
+	
+	transform:  scale(1.5);
+	-moz-transform: scale(1.5);       /*Mozilla*/
+	-webkit-transform: scale(1.5);    /*Chrome*/
+	-o-transform: scale(1.5);         /*Opera*/
+	-ms-transform: scale(1.5);        /*internet explorer*/
+}
+
+
+/*transicion para el movimiento de imagenes*/
+
+.frase img {
+	
+	transition: all 1.5s ease;
+	-webkit-transition: all 1.5s ease;
+	-moz-transition: all 1.5s ease;
+	-o-transition: all 1.5s ease;
+	-ms-transition: all 1.5s ease;
+}
+
+
+
+#redes-sociales {
+	
+	position: fixed;
+	bottom: 2em;
+	right: 0.5em;
+	/*top, right, left, bottom */
+	background-color: orange;
+	opacity: 0.5;
+	padding: 0.5em;
+	border-radius: 0.2em;
+	/*top, right, left, bottom */
+	-moz-border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-o-border-radius: 0.2em;
+	-ms-border-radius: 0.2em;
+	
+	/*sombra*/
+	box-shadow: 0px 0px 5px 2px #FFFF00;
+	-moz-box-shadow: 0px 0px 5px 2px #FFFF00;
+	-webkit-box-shadow: 0px 10px 5px 2px #FFFF00; 
+	-o-box-shadow: 0px 0px 5px 2px #FFFF00; 
+	-ms-box-shadow: 0px 0px 5px 2px #FFFF00;   
+}
+
+
+#div_vacio {
+	height: 110px;
+}
+
+header {
+	
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
